@@ -7,3 +7,4 @@ const recursiveFactorial = (n) => {
 // Big-O: O(n) - Linear Time Complexity
 console.log(recursiveFactorial(5));
 console.log(recursiveFactorial(0));
+console.log(recursiveFactorial(1));
