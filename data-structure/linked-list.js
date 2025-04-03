@@ -100,6 +100,28 @@ class LinkedList {
     }
   }
 
+  reverse() {
+    let prev = null;
+    let curr = this.head;
+    while(curr) {
+      
+    }
+  }
+
+  search(value) {
+    if (this.isEmpty()) return -1;
+    let i = 0;
+    let curr = this.head;
+    while (curr) {
+      if (curr.value === value) {
+        return i;
+      }
+      curr = curr.next;
+      i++;
+    }
+    return -1;
+  }
+
   print() {
     if (this.isEmpty()) {
       console.log("the list is empty");
@@ -131,7 +153,7 @@ list.insert(30, 1);
 list.print();
 list.insert(40, 2);
 list.print();
-list.removeFrom(0);
-list.print();
-list.removeValue(40);
-list.print();
+console.log(list.search(60));
+
+// list.removeValue(40);
+// list.print();
